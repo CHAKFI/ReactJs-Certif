@@ -1,3 +1,33 @@
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  background-color: #f1f1f1;
+  height: 100%; /* Full height */
+  position: fixed; 
+  overflow: auto; 
+}
+
+h1 {
+  color: aquamarine;
+  }
+
+#hi {
+  color: rgb(255, 187, 210);
+  font-weight: bold;
+}
+
+#mssg {
+  color: #61dafb;
+  font-weight: bold;
+}
+
+#end {
+  font-weight: 900;
+} 
+
 .App {
   text-align: center;
 }
@@ -18,7 +48,7 @@
   min-height: 93.5vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   font-size: calc(5px + 1.5vmin);
   color: white;
@@ -36,3 +66,4 @@
     transform: rotate(360deg);
   }
 }
+
