@@ -1,7 +1,11 @@
 import './App.css';
-
-
 let counter = 0;
+
+
+function Info(){
+  return "That is the ReactDOM.render function call Counter:";
+}
+
 
 function App() {
   counter++;
@@ -15,7 +19,8 @@ function App() {
           Hi im Scratchi, I just started coding with ReactJs...
         </p>
         
-        <p>ReactDOM.render function call Counter: {counter}</p>
+
+        <p>{Info()} {counter}</p>
 
       </header>
 
