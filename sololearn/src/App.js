@@ -1,11 +1,17 @@
+import React from 'react';
 import './App.css';
 let counter = 0;
 
 
-function Info(){
-  return "That is the ReactDOM.render function call Counter:";
-}
+// function Info(){
+//   return "That is the ReactDOM.render function call Counter:";
+// }
 
+class Info extends React.Component{
+  render(){
+    return "That is the ReactDOM.render Class call Counter:";
+  }
+}
 
 function App() {
   counter++;
@@ -20,7 +26,7 @@ function App() {
         </p>
         
 
-        <p>{Info()} {counter}</p>
+        <p>{<Info />} {counter}</p>
 
       </header>
 
