@@ -22,28 +22,25 @@ function Att2(prop2){
 }
 
 function App() {
+  
   counter++;
-
   return (
+
     <div className="App">
-              <div> 
-          
+                 
           <ul>
            <li><a href="default.asp">Home</a></li>
            <li><a href="news.asp">{Att1("Day News")}</a></li>
            <li><a href="contact.asp"><Att2 value="Contact us"/></a></li>
            <li><a href="about.asp">About</a></li>
           </ul>
-         </div>
+         
       <header className="App-header" >
-
         <h1> www.Scratchi.com </h1>
-        <p id="hi">
-          Hi im Scratchi, I just started coding with ReactJs...
-        </p>
-        <p id="mssg">{<Info />} {counter}</p>
-
-
+          <p id="hi">
+            Hi im Scratchi, I just started coding with ReactJs...
+          </p>
+          <p id="mssg">{<Info />} {counter}</p>
       </header>
 
       <footer>
