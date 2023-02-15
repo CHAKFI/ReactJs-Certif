@@ -13,8 +13,12 @@ class Info extends React.Component{
   }
 }
 
-function AttTest(a){
-  return a;
+function Att1(prop1){
+  return prop1;
+}
+
+function Att2(prop2){
+  return prop2.value; 
 }
 
 function App() {
@@ -26,8 +30,8 @@ function App() {
           
           <ul>
            <li><a href="default.asp">Home</a></li>
-           <li><a href="news.asp">{AttTest("Day News")}</a></li>
-           <li><a href="contact.asp">Contact</a></li>
+           <li><a href="news.asp">{Att1("Day News")}</a></li>
+           <li><a href="contact.asp"><Att2 value="Contact us"/></a></li>
            <li><a href="about.asp">About</a></li>
           </ul>
          </div>
