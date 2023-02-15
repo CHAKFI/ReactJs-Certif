@@ -7,6 +7,12 @@ let counter = 0;
 //   return "That is the ReactDOM.render function call Counter:";
 // }
 
+class Att3 extends React.Component{
+  render(){
+    return <li><a href="about.asp">{this.props.name}</a></li>
+  }
+}
+
 class Info extends React.Component{
   render(){
     return "That is the ReactDOM.render Class call Counter:";
@@ -32,7 +38,7 @@ function App() {
            <li><a href="default.asp">Home</a></li>
            <li><a href="news.asp">{Att1("Day News")}</a></li>
            <li><a href="contact.asp"><Att2 value="Contact us"/></a></li>
-           <li><a href="about.asp">About</a></li>
+           <Att3 name="About us"/>
           </ul>
          
       <header className="App-header" >
