@@ -58,11 +58,13 @@ function App() {
           <Att3 name="About us"/>
         </ul>
 
+        <div>
         <p id="hi">
           Hi im Scratchi, I just started coding with ReactJs...
         </p>
-        <p id="mssg">{<Info />} {counter}</p>
-          
+          <p id="mssg">{<Info />} {counter}</p>
+        </div>
+
       </header>
 
       <footer>
