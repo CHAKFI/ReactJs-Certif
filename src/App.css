@@ -9,6 +9,11 @@ ul {
   border-style: double;
 }
 
+#p1 {
+  color: #2bf208;
+  font-weight: bold;
+}
+
 .divi {
   background-color: #282c34;
   margin: 0;
@@ -47,7 +52,6 @@ h1 {
 
 #mssg {
   color: #61dafb;
-  font-weight: bold;
 }
 
 #end {

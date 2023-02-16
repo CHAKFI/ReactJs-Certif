@@ -33,11 +33,12 @@ function Att2(prop2){
 
 // Items Function
 function Item(certif){
-  return
+  return (
     <div>
-      <p><b>Certif. Name: </b>certif.name</p>
-      <p><b>Price: </b>certif.price</p>
+      <p><b>Name: </b>{certif.name}</p>
+      <p><b>Price: </b>{certif.price}</p>
     </div>
+    );
 }
 
 function App() {
@@ -59,10 +60,12 @@ function App() {
         </ul>
 
         <div>
-        <p id="hi">
-          Hi im Scratchi, I just started coding with ReactJs...
-        </p>
-          <p id="mssg">{<Info />} {counter}</p>
+          <p id="hi">
+            Hi im Scratchi, I just started coding with ReactJs...
+          </p>
+          <p id="mssg">{<Info />} {counter}</p><br/>
+          <p id="p1">Cretifications:</p>
+          <p color='white'>{<Item name="Reactjs" price="80$"/>}</p>
         </div>
 
       </header>
