@@ -34,7 +34,7 @@ function Att2(prop2){
 // Items Function
 function Item(certif){
   return (
-    <div>
+    <div className="item" >
       <p><b>Name: </b>{certif.name}</p>
       <p><b>Price: </b>{certif.price}</p>
     </div>
@@ -52,7 +52,7 @@ function App() {
 
       <header className="App-header" >
 
-        <ul >
+        <ul>
           <li><a href="default.asp">Home</a></li>
           <li><a href="news.asp">{Att1("Day News")}</a></li>
           <li><a href="contact.asp"><Att2 value="Contact us"/></a></li>
@@ -65,7 +65,10 @@ function App() {
           </p>
           <p id="mssg">{<Info />} {counter}</p><br/>
           <p id="p1">Cretifications:</p>
-          <p color='white'>{<Item name="Reactjs" price="80$"/>}</p>
+          <p color='white'>{<Item name="Reactjs" price="79.99$"/>}</p>
+          <p color='white'>{<Item name="Nodejs" price="54.99$"/>}</p>
+          <p color='white'>{<Item name="Data Analytics" price="189.99$"/>}</p>
+          <p color='white'>{<Item name="" price="99.99$"/>}</p>
         </div>
 
       </header>

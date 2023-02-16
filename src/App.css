@@ -9,6 +9,13 @@ ul {
   border-style: double;
 }
 
+.item {
+  background-color:#b3e3de;
+  margin:25px;
+  padding:1px;
+  border-radius:25px;
+}
+
 #p1 {
   color: #2bf208;
   font-weight: bold;
