@@ -18,9 +18,15 @@ export class Info extends React.Component{
 // pass and upd data using state feature
 export class Pass_data extends React.Component{
   state = {
-    sdata: "The operation has been processed.." 
+    _data: "The operation has been processed..",
+    _state: "DONE"
   }
   render(){
-    return <p>{this.state.sdata}</p>;
+    return(
+      <div> 
+        <p>{this.state._data}</p>
+        <p>{this.state._state}</p>
+      </div> 
+    );
   }
 }
