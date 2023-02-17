@@ -30,3 +30,27 @@ export class Pass_data extends React.Component{
     );
   }
 }
+
+// Class counter using a button
+export class Counter extends React.Component {
+
+  state = {
+    _counter: 0
+  }
+
+  increment = () => {
+    this.setState({
+      counter: this.state._counter++
+    });
+    }
+
+  render() {
+    return (
+      <div>
+        <h2>{this.state._counter}</h2>
+        <button onClick={this.increment}>+</button>
+      </div>
+    );
+  }
+
+}

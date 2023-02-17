@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Att3, Info, Pass_data} from'./Classes';
+import {Att3, Info, Pass_data, Counter} from'./Classes';
 import {Att1, Att2, Item} from'./Functions';
 
 let counter = 0;
@@ -33,11 +33,17 @@ function App() {
           <p>{<Item name="Reactjs" price="79.99$"/>}</p>
           <p>{<Item name="Nodejs" price="54.99$"/>}</p>
           <p>{<Item name="Data Analytics" price="189.99$"/>}</p>
-          <p>{<Item name="" price="99.99$"/>}</p>
+          <p>{<Item name="Data Science" price="99.99$"/>}</p>
         </div>
 
         <div>
           <p id="p1">{<Pass_data />}</p>
+        </div>
+
+        <div>
+          <br/><br/><br/>
+          <p>Boutton increments</p>
+          <Counter/>
         </div>
 
       </header>
