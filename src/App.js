@@ -1,45 +1,10 @@
 import React from 'react';
 import './App.css';
+import {Att3, Info, Pass_data} from'./Classes';
+import {Att1, Att2, Item} from'./Functions';
+
 let counter = 0;
 
-
-// function Info(){
-//   return "That is the ReactDOM.render function call Counter:";
-// }
-
-// Property Class
-class Att3 extends React.Component{
-  render(){
-    return <li><a href="about.asp">{this.props.name}</a></li>
-  }
-}
-
-// Class that return information message
-class Info extends React.Component{
-  render(){
-    return "That is the ReactDOM.render Class call Counter:";
-  }
-}
-
-// Property Function 1
-function Att1(prop1){
-  return prop1;
-}
-
-// Property Function 2
-function Att2(prop2){
-  return prop2.value; 
-}
-
-// Items Function
-function Item(certif){
-  return (
-    <div className="item" >
-      <p><b>Name: </b>{certif.name}</p>
-      <p><b>Price: </b>{certif.price}</p>
-    </div>
-    );
-}
 
 function App() {
   
@@ -61,14 +26,18 @@ function App() {
 
         <div>
           <p id="hi">
-            Hi im Scratchi, I just started coding with ReactJs...
+            Hi im Scratchi, I just started coding with ReactJs hhhh...
           </p>
           <p id="mssg">{<Info />} {counter}</p><br/>
-          <p id="p1">Cretifications:</p>
-          <p color='white'>{<Item name="Reactjs" price="79.99$"/>}</p>
-          <p color='white'>{<Item name="Nodejs" price="54.99$"/>}</p>
-          <p color='white'>{<Item name="Data Analytics" price="189.99$"/>}</p>
-          <p color='white'>{<Item name="" price="99.99$"/>}</p>
+          <p id="p1"> Course Cretifications:</p>
+          <p>{<Item name="Reactjs" price="79.99$"/>}</p>
+          <p>{<Item name="Nodejs" price="54.99$"/>}</p>
+          <p>{<Item name="Data Analytics" price="189.99$"/>}</p>
+          <p>{<Item name="" price="99.99$"/>}</p>
+        </div>
+
+        <div>
+          <p id="p1">{<Pass_data />}</p>
         </div>
 
       </header>
