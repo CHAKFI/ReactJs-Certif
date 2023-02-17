@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 // Property Function 1
 export function Att1(props){
@@ -18,4 +18,9 @@ export function Item(props){
         <p><b>Price: </b>{props.price}</p>
       </div>
       );
+  }
+
+  export function Namey(){
+    const [name, setName] = useState("Ahmed");
+    return <h1>azerty {name}</h1>
   }

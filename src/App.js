@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import {Att3, Info, Pass_data, Counter} from'./Classes';
-import {Att1, Att2, Item} from'./Functions';
+import {Att1, Att2, Item, Namey} from'./Functions';
 
 let counter = 0;
 
@@ -28,7 +28,7 @@ function App() {
           <p id="hi">
             Hi im Scratchi, I just started coding with ReactJs hhhh...
           </p>
-          <p id="mssg">{<Info />} {counter}</p><br/>
+          <p id="mssg">111 <Info /> {counter}</p><br/>
           <p id="p1"> Course Cretifications:</p>
           <p>{<Item name="Reactjs" price="79.99$"/>}</p>
           <p>{<Item name="Nodejs" price="54.99$"/>}</p>
@@ -37,13 +37,19 @@ function App() {
         </div>
 
         <div>
-          <p id="p1">{<Pass_data />}</p>
+          <p id="p1">000<Pass_data /></p>
         </div>
 
         <div>
           <br/><br/><br/>
           <p>Boutton increments</p>
           <Counter/>
+        </div>
+
+        <div>
+          <br/><br/><br/><br/><br/><br/>
+          <p>Hooks test</p>
+          <Namey/>
         </div>
 
       </header>
