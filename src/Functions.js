@@ -25,7 +25,7 @@ export function Item(props){
     return (
       <div>
     <h1>azerty {name}</h1>
-    <h1>yes {useState("monir")}</h1>
+    <h1>yes {useState("test")}</h1>
     <h1>azerty {name}</h1>
     </div>
     );
