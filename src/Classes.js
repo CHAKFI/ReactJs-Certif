@@ -40,11 +40,17 @@ export class ClaCounter extends React.Component {
 
   increment = () => {
     this.setState({
-      counter: this.state._counter++
+      _counter: this.state._counter+1
     });
     }
 
-  componentDidMount(){this.setState({_counter: 42});}
+  //componentDidMount() method is called when a component is rendred
+  // componentDidMount(){this.setState({_counter: 542});}
+
+  //However componentDidUpdate(), after the component is rendered and changed or updated (re-rendered)
+  componentDidUpdate() {
+    alert("Number of clicks: " + this.state._counter);
+  }
 
   render() {
     return (
