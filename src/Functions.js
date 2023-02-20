@@ -22,5 +22,11 @@ export function Item(props){
 
   export function Namey(){
     const [name, setName] = useState("Ahmed");
-    return <h1>azerty {name}</h1>
+    return (
+      <div>
+    <h1>azerty {name}</h1>
+    <h1>yes {useState("monir")}</h1>
+    <h1>azerty {name}</h1>
+    </div>
+    );
   }
