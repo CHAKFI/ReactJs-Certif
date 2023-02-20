@@ -20,6 +20,7 @@ export function Item(props){
       );
   }
 
+  // Is that a Hook ? mmm yes
   export function Namey(){
     const [name, setName] = useState("Ahmed");
     return (
@@ -29,4 +30,20 @@ export function Item(props){
     <h1>azerty {name}</h1>
     </div>
     );
+  }
+
+  export function FunCounter (){
+    const [count, setCounter] = useState(0);
+
+    function increment (){
+      setCounter(count+1);
+    }
+
+    return (
+      <div>
+        <p>Let use Hook counter: {count}</p>
+        <button onClick={increment}>Hook Counter +</button>
+      </div>
+    );
+
   }

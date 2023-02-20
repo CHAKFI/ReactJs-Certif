@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import {Att3, Info, Pass_data, Counter} from'./Classes';
-import {Att1, Att2, Item, Namey} from'./Functions';
+import {Att1, Att2, Item, Namey, FunCounter} from'./Functions';
 
 let counter = 0;
 
@@ -42,7 +42,7 @@ function App() {
 
         <div>
           <br/><br/><br/>
-          <p>Boutton increments</p>
+          <p>Boutton increments Using a class</p>
           <Counter/>
         </div>
 
@@ -50,6 +50,12 @@ function App() {
           <br/><br/><br/><br/><br/><br/>
           <p>Hooks test</p>
           <Namey/>
+        </div>
+
+        
+        <div>
+        <br/><br/><br/><br/><br/><br/>
+          <FunCounter />
         </div>
 
       </header>
