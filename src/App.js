@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import {Att3, Info, Pass_data, ClaCounter} from'./Classes';
-import {Att1, Att2, Item, Namey, FunCounter} from'./Functions';
+import {Att1, Att2, Item, Namey, FunCounter, Converter} from'./Functions';
 
 let counter = 0;
 
@@ -17,7 +17,9 @@ function App() {
 
       <header className="App-header" >
 
-
+          <div>
+            <Converter />
+          </div>
 
         {/* <ul>
           <li><a href="default.asp">Home</a></li>

@@ -49,22 +49,34 @@ export function FunCounter (){
 
   // Converting Km to Miles
 export function Converter (){
-
-    // Defining variable that contain the result
-    var calc = null;
   
+    var calc = 0.00;
     // 1 km = 0.621371 miles (constant)
     const mi = 0.621371;
 
     // Initiallize _km with 0.00 value
     const [_km, setKm] = useState(0.00);
 
+    function _setKm (k){
+      setKm(k.target.value);
+    }
+
     // process function convert from km to miles and return result 
     function process (_km){
+      // Defining variable that contain the result
       calc = _km * mi;
 
     //toFixed limite the dicimal numbers after the dot to two numbers
-      return calc.toFixed(2);
+    return calc.toFixed(2);
     } 
+    
+    return (
+      <div id="conv">
+        Converter<br/>
+        Km : <input type="text" value={_km} onChange={_setKm} /><br/>
+        Mi : <input type="text" value={process(_km)} /><br/>
+        <button onClick={process(_km)} > Convert </button> 
+      </div>
+    );
 
   }
