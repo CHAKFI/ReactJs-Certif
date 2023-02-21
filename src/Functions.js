@@ -21,7 +21,7 @@ export function Item(props){
   }
 
   // Is that a Hook ? mmm yes
-  export function Namey(){
+export function Namey(){
     const [name, setName] = useState("Ahmed");
     return (
       <div>
@@ -32,7 +32,7 @@ export function Item(props){
     );
   }
 
-  export function FunCounter (){
+export function FunCounter (){
     const [count, setCounter] = useState(0);
 
     function increment (){
@@ -45,5 +45,26 @@ export function Item(props){
         <button onClick={increment}>Hook Counter +</button>
       </div>
     );
+  }
+
+  // Converting Km to Miles
+export function Converter (){
+
+    // Defining variable that contain the result
+    var calc = null;
+  
+    // 1 km = 0.621371 miles (constant)
+    const mi = 0.621371;
+
+    // Initiallize _km with 0.00 value
+    const [_km, setKm] = useState(0.00);
+
+    // process function convert from km to miles and return result 
+    function process (_km){
+      calc = _km * mi;
+
+    //toFixed limite the dicimal numbers after the dot to two numbers
+      return calc.toFixed(2);
+    } 
 
   }
