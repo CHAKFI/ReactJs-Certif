@@ -17,7 +17,9 @@ function App() {
 
       <header className="App-header" >
 
-        <ul>
+        
+
+        {/* <ul>
           <li><a href="default.asp">Home</a></li>
           <li><a href="news.asp">{Att1("Day News")}</a></li>
           <li><a href="contact.asp"><Att2 value="Contact us"/></a></li>
@@ -56,7 +58,7 @@ function App() {
         <div>
         <br/><br/><br/><br/><br/><br/>
           <FunCounter />
-        </div>
+        </div> */}
 
       </header>
 
