@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Form from './Form'
 import {Att3, Info, Pass_data, ClaCounter} from'./Classes';
 import {Att1, Att2, Item, Namey, FunCounter, Converter} from'./Functions';
 
@@ -23,7 +24,8 @@ function App() {
           
           <div>
           <p id="hi">
-          Hi im Scratchi, I just started coding with ReactJs hhhh...
+          <Form />
+          Hi im Scratchi, I just started coding with ReactJs hhhh...     
           </p>
           </div>
         {/* <ul>
