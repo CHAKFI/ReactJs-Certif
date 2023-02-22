@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 
 // Property Function 1
 export function Att1(props){
@@ -51,15 +51,22 @@ export function FunCounter (){
 export function Converter (){
   
     var calc = 0.00;
+
     // 1 km = 0.621371 miles (constant)
     const mi = 0.621371;
 
+    const inputRef = useRef(null);
+
     // Initiallize _km with 0.00 value
     const [_km, setKm] = useState(0.00);
-
-    function _setKm (k){
-      setKm(k.target.value);
+   
+    function handleClick (){
+      setKm(inputRef.current.value);
     }
+
+    // function handleChange (k){
+    //   setKm(k.target.value);
+    // }
 
     // process function convert from km to miles and return result 
     function process (_km){
@@ -69,13 +76,13 @@ export function Converter (){
     //toFixed limite the dicimal numbers after the dot to two numbers
     return calc.toFixed(2);
     } 
-    
+     
     return (
       <div id="conv">
         Converter<br/>
-        Km : <input type="text" value={_km} onChange={_setKm} /><br/>
+        Km : <input type="text" ref={inputRef} name="kilo"/><br/>
         Mi : <input type="text" value={process(_km)} /><br/>
-       
+             <button onClick={handleClick} > Convert </button>
       </div>
     );
 
