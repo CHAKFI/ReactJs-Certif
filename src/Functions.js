@@ -75,7 +75,7 @@ export function Converter (){
         Converter<br/>
         Km : <input type="text" value={_km} onChange={_setKm} /><br/>
         Mi : <input type="text" value={process(_km)} /><br/>
-        <button onClick={process(_km)} > Convert </button> 
+       
       </div>
     );
 

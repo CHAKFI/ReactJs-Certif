@@ -20,7 +20,12 @@ function App() {
           <div>
             <Converter />
           </div>
-
+          
+          <div>
+          <p id="hi">
+          Hi im Scratchi, I just started coding with ReactJs hhhh...
+          </p>
+          </div>
         {/* <ul>
           <li><a href="default.asp">Home</a></li>
           <li><a href="news.asp">{Att1("Day News")}</a></li>
