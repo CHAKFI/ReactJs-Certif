@@ -79,6 +79,7 @@ export function Converter (){
      
     return (
       <div id="conv">
+        Converter <br/>
         Km : <input type="text" ref={inputRef} name="kilo"/><br/>
         Mi : <input type="text" value={process(_km)} /><br/>
              <button onClick={handleClick} > Convert </button>
@@ -87,9 +88,16 @@ export function Converter (){
 
   }
 
-  export function ListWe(){
+  export function ListWe(attrib){
 
-    const li = ["Home", "About", "Contact us"];
-    
-  
+    // const li = ["Home", "About", "Contact us"];
+      const tab = attrib.data;
+      const liItems = tab.map((element) => <li>{element}</li> );
+
+    return(
+      <div id="listWe">
+        List View
+        <ul>{liItems}</ul>
+      </div>
+    );
   }

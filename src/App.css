@@ -10,6 +10,18 @@
   font-weight: bold;
 }
 
+#listWe {
+  background-color: #282c34;
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Full height */
+  overflow: auto;
+  border-color: #04AA6D;
+  border-style: double;
+  color: #0f67eb;
+  font-weight: bold;
+}
+
 ul {
   list-style-type: none;
   margin: 0;

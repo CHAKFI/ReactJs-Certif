@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Form from './Form'
 import {Att3, Info, Pass_data, ClaCounter} from'./Classes';
-import {Att1, Att2, Item, Namey, FunCounter, Converter} from'./Functions';
+import {Att1, Att2, Item, Namey, FunCounter, Converter, ListWe} from'./Functions';
 
 let counter = 0;
 
@@ -30,7 +30,7 @@ function App() {
           </div>
 
           <div>
-            
+            <ListWe data={["Home", "About", "Contact us"]} />
           </div>
 
         {/* <ul>
