@@ -24,10 +24,15 @@ function App() {
                 
           <div>
           <p id="hi">
+            Form
           <Form />
-          Hi im Scratchi, I just started coding with ReactJs hhhh...     
           </p>
           </div>
+
+          <div>
+            
+          </div>
+
         {/* <ul>
           <li><a href="default.asp">Home</a></li>
           <li><a href="news.asp">{Att1("Day News")}</a></li>
