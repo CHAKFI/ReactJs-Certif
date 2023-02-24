@@ -92,7 +92,7 @@ export function Converter (){
 
     // const li = ["Home", "About", "Contact us"];
       const tab = attrib.data;
-      const liItems = tab.map((element, index) => <li key={index}>{element}</li> );
+      const liItems = tab.map((element, index) => <li key={index}>{index+1}.{element}</li> );
 
     return(
       <div id="listWe">
