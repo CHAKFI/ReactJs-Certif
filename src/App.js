@@ -18,7 +18,9 @@ function App() {
 
       <header className="App-header" >
 
-          <div>
+          
+
+          {/* <div>
             <Converter />
           </div>
                 
@@ -31,7 +33,7 @@ function App() {
 
           <div>
             <ListWe data={["Home", "About", "Contact us"]} />
-          </div>
+          </div> */}
 
         {/* <ul>
           <li><a href="default.asp">Home</a></li>
