@@ -29,7 +29,7 @@ export class Pass_data extends React.Component{
       </div> 
     );
   }
-}
+}  
 
 // Class counter using a button
 export class ClaCounter extends React.Component {
