@@ -13,6 +13,7 @@ This repo contain my ReactJs practices and projects, with NodeJs &amp; Redux.
 - **Redux**
 - **MongoDB / PostgreSQL**
 
+## Certification:
+https://www.sololearn.com/certificates/CT-KEKSRJOK
 
-## Screenshot:
- > Coming Soon... : 
+![ReactCertifSololearn](https://user-images.githubusercontent.com/36175107/222153804-04e93651-f9b4-4bed-a6aa-98a8c96e734c.jpg)
